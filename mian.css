@@ -4,10 +4,15 @@
     display: inline-block;
     margin: 100px;
     position: relative;
-    transition: all 1s;
+    animation: .5s heart infinite alternate-reverse;
 }
-#heart:hover{
+@keyframes heart {
+  0%{
+    transform: scale(1);
+  }
+  100%{
     transform: scale(1.2);
+  }
 }
 #heart>.left{
     background: red;
